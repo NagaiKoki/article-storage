@@ -1,0 +1,27 @@
+{
+  "name": "article-storage",
+  "version": "1.0.0",
+  "description": "koki nagai's article storage",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "pnpm run lint:personal && pnpm run lint:official",
+    "lint:personal": "textlint src/personal-blogs --c .textlintrc.personal.js",
+    "lint:official": "textlint src/official-blogs --c .textlintrc.official.js"
+  },
+  "keywords": [],
+  "author": "kokinagai200@gmail.com <kokinagai200@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "textlint": "^13.3.2",
+    "textlint-rule-no-dropping-the-ra": "^3.0.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
+  },
+  "lint-staged": {
+    "src/*.md": [
+      "yarn lint"
+    ]
+  }
+}
