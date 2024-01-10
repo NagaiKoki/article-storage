@@ -18,7 +18,7 @@ Railsなどのフレームワークを使うとRails Wayとしての設計指針
 
 なので、今回は各SOLID原則の5つに対して、Reactのサンプルコードを使って説明をしていきたいと思います。
 
-## SRP (Simple Responsibility Principle)
+## SRP (Single Responsibility Principle)
 
 Clean Architecture の中では、SRP とは以下のように述べられています。
 
